@@ -40,7 +40,6 @@
 
         // Magnific popup-youtube Config
         $('.popup-youtube').magnificPopup({
-            disableOn: 700,
             type: 'iframe',
             mainClass: 'mfp-fade',
             removalDelay: 160,
