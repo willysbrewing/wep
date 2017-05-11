@@ -264,7 +264,7 @@ a:hover, a:focus{
 .color-grey-900{color: #212121 !important;}
 
 /* CTA */
-a.cta{
+.cta{
   font: 300 16px 'Chau Philomene One', sans-serif;
   max-width: 100%;
   padding: 20px 25px;
@@ -276,12 +276,12 @@ a.cta{
   transition: all 1s ease;
 }
 
-a.cta:hover, a.cta:focus{
+.cta:hover, a.cta:focus{
   text-decoration: none;
   box-shadow: 0 20px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
 }
 
-a.cta.cta-alt {
+.cta.cta-alt {
   background: rgba(0, 0, 0, 1);
   color: #ffffff;
 }
@@ -319,6 +319,8 @@ a.cta.cta-alt {
 .lp-app .content {
   opacity: 1;
   transition: all linear 1s;
+  background-color: #EEEEEE;
+  background-image: repeating-linear-gradient(165deg, transparent, transparent 10px, rgba(255,255,255,1) 10px, rgba(255,255,255,1) 600px);
 }
 
 .lp-app .content .feat{
@@ -414,6 +416,7 @@ a.cta.cta-alt {
   background-image: url('/images/party.jpg');
   background-size: cover;
   background-attachment: fixed;
+  background-position: center center;
   /*background: #ffc107;
   background: -moz-linear-gradient(160deg, #ffc107 0%, #ffffff 100%);
   background: -webkit-linear-gradient(160deg, #ffc107 0%, #ffffff 100%);
@@ -433,7 +436,7 @@ a.cta.cta-alt {
 }
 
 .lp-app .content .hero::before {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
   transition: 5s ease;
 }
 
@@ -456,6 +459,8 @@ a.cta.cta-alt {
 
 .lp-app .content .hero h2{
   font-size: 32px;
+  font-family: 'Chau Philomene One';
+  text-transform: uppercase;
 }
 
 .lp-app .content .hero p{
@@ -467,8 +472,12 @@ a.cta.cta-alt {
 
   .lp-app .content .hero{
     background-attachment: inherit;
+    background-position-x: 70%;
   }
 
+  .lp-app .content .hero::before {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 
   .lp-app .content .hero img{
     width: 100px;
@@ -543,6 +552,16 @@ a.cta.cta-alt {
   }
 }
 
+/* Quote */
+.lp-app .content .quote  {
+
+}
+
+.lp-app .content .quote p{
+  text-align: center;
+  font-size: 32px;
+}
+
 /* Mosaic */
 .lp-app .content .mosaic  {
 
@@ -556,7 +575,7 @@ a.cta.cta-alt {
   border: 5px solid white;
 }
 
-/* video-car */
+/* video-card */
 .lp-app .content .video-card{
   width: 100%;
   height: 420px;
