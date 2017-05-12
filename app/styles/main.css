@@ -323,6 +323,11 @@ a:hover, a:focus{
   background-image: repeating-linear-gradient(165deg, transparent, transparent 10px, rgba(255,255,255,1) 10px, rgba(255,255,255,1) 600px);
 }
 
+.lp-app .content .everlasting {
+  padding: 15px 0;
+  font-size: 42px;
+}
+
 .lp-app .content .feat{
   padding: 40px 0;
 }
@@ -413,7 +418,7 @@ a:hover, a:focus{
   /*padding: 60px 0 40px 0;*/
   min-height: 100vh;
   position: relative;
-  background-image: url('/images/party.jpg');
+  background-image: url('/images/beer.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
@@ -436,7 +441,7 @@ a:hover, a:focus{
 }
 
 .lp-app .content .hero::before {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
   transition: 5s ease;
 }
 
@@ -454,7 +459,9 @@ a:hover, a:focus{
   padding-top: 30vh;
   text-transform: uppercase;
   font-size: 100px;
-  font-family: 'Chau Philomene One';
+  letter-spacing: 20px;
+  font-family: 'Montserrat';
+  font-size: 120px;
 }
 
 .lp-app .content .hero h2{
@@ -476,7 +483,7 @@ a:hover, a:focus{
   }
 
   .lp-app .content .hero::before {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .lp-app .content .hero img{
@@ -484,7 +491,7 @@ a:hover, a:focus{
   }
 
   .lp-app .content .hero h1{
-    font-size: 40px;
+    font-size: 60px;
   }
 
 }
@@ -494,11 +501,9 @@ a:hover, a:focus{
 }
 
 .lp-app .content .full.first{
-  padding: 40px 0 0 0;
 }
 
 .lp-app .content .full.second{
-  padding: 0 0 40px 0;
 }
 
 .lp-app .content .full img{
@@ -507,19 +512,17 @@ a:hover, a:focus{
 }
 
 .lp-app .content .full .text{
-  margin-top: 10px;
 }
 
 .lp-app .content .full.second .text{
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 @media (max-width: 767px) {
 
+
   .lp-app .content .full .text{
     margin-top: 0;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
 }
@@ -560,6 +563,12 @@ a:hover, a:focus{
 .lp-app .content .quote p{
   text-align: center;
   font-size: 32px;
+}
+
+@media (max-width: 767px) {
+  .lp-app .content .quote  {
+    padding: 40px 0;
+  }
 }
 
 /* Mosaic */
