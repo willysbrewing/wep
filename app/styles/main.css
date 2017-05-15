@@ -450,13 +450,18 @@ a:hover, a:focus{
   position: relative;
 }
 
-.lp-app .content .hero img{
+.lp-app .content .hero h1 img{
+  width: 400px;
+  max-width: 400px;
+}
+
+.lp-app .content .hero h2 img{
   width: 230px;
   max-width: 230px;
 }
 
 .lp-app .content .hero h1{
-  padding-top: 30vh;
+  padding-top: 20vh;
   text-transform: uppercase;
   font-size: 100px;
   letter-spacing: 20px;
@@ -486,11 +491,17 @@ a:hover, a:focus{
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  .lp-app .content .hero img{
+  .lp-app .content .hero h1 img{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .lp-app .content .hero h2 img{
     width: 100px;
   }
 
   .lp-app .content .hero h1{
+    padding-top: 5vh;
     font-size: 60px;
   }
 
