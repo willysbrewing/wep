@@ -298,6 +298,15 @@ a:hover, a:focus{
   text-align: center;
 }
 
+.bg-gradient{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffc107+0,ff6f00+100 */
+  background: #ffc107; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #ffc107 0%, #ff6f00 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ffc107 0%,#ff6f00 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ffc107 0%,#ff6f00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc107', endColorstr='#ff6f00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
 /**
 * lp-app
 */
@@ -319,7 +328,7 @@ a:hover, a:focus{
 .lp-app .content {
   opacity: 1;
   transition: all linear 1s;
-  background-color: #EEEEEE;
+  background-color: rgba(225,111,0,0.5);
   background-image: repeating-linear-gradient(165deg, transparent, transparent 10px, rgba(255,255,255,1) 10px, rgba(255,255,255,1) 600px);
 }
 
@@ -416,17 +425,14 @@ a:hover, a:focus{
 
 .lp-app .content .hero{
   /*padding: 60px 0 40px 0;*/
-  min-height: 100vh;
+  min-height: 560px;
+  max-height: 560px;
+  height: 560px;
   position: relative;
-  background-image: url('/images/beer.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-  /*background: #ffc107;
-  background: -moz-linear-gradient(160deg, #ffc107 0%, #ffffff 100%);
-  background: -webkit-linear-gradient(160deg, #ffc107 0%, #ffffff 100%);
-  background: linear-gradient(160deg, #ffc107 0%, #ffffff 100%);*/
-  text-align: left;
+  text-align: center;
 }
 
 .lp-app .content .hero::before, .lp-app .content .hero::after {
@@ -441,7 +447,7 @@ a:hover, a:focus{
 }
 
 .lp-app .content .hero::before {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0);
   transition: 5s ease;
 }
 
@@ -461,7 +467,7 @@ a:hover, a:focus{
 }
 
 .lp-app .content .hero h1{
-  padding-top: 20vh;
+  padding-top: 10vh;
   text-transform: uppercase;
   font-size: 100px;
   letter-spacing: 20px;
@@ -488,7 +494,7 @@ a:hover, a:focus{
   }
 
   .lp-app .content .hero::before {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .lp-app .content .hero h1 img{
@@ -515,6 +521,7 @@ a:hover, a:focus{
 }
 
 .lp-app .content .full.second{
+  padding: 40px 0 20px 0;
 }
 
 .lp-app .content .full img{

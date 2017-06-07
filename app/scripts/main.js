@@ -47,13 +47,11 @@
             fixedContentPos: false
         });
 
-        var colors = ['#FFFF00','#FFFF33','#F2EA02','#E6FB04',
-        '#FF0000','#FD1C03','#FF3300','#FF6600',
-        '#00FF00','#00FF33','#00FF66','#33FF00',
-        '#00FFFF','#099FFF','#0062FF','#0033FF',
-        '#FF00FF','#FF00CC','#FF0099','#CC00FF',
-        '#9D00FF','#CC00FF','#6E0DD0','#9900FF'];
-
+        var colors = ['#FFF8E1','#FFECB3','#FFE082','#FFD54F',
+        '#FFCA28','#FFC107','#FFB300','#FFA000',
+        '#FF8F00','#FF6F00','#FFE57F','#FFD740',
+        '#FFC400','#FFAB00'];
+        
         setInterval(function(){
           $('.everlasting').css('color', colors[(Math.trunc(Math.random()*colors.length))]);
         }, 500);
